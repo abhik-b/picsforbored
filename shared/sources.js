@@ -1,5 +1,5 @@
 export const memes=['memes','holup','comedyhomicide','cursedcomments','murderedbywords']
 export const nature=['EarthPorn','natureporn','NatureIsFuckingLit']
-export const funny=['funny']
+export const funny=['funny','comics']
 export const art=['drawing','art']
 export const others=['coolguides','pics','wholesomememes','perfecttiming']

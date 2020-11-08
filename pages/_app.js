@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import {useState} from 'react'
+import React,{useState} from 'react'
 
 export function reportWebVitals(metric) {
   if (metric.label === 'web-vital') {
@@ -9,7 +9,11 @@ export function reportWebVitals(metric) {
 
 function MyApp({ Component, pageProps }) {
   
-  return <Component {...pageProps}/>
+  return   <>
+  <div className="logo">abhikB</div>
+  <Component {...pageProps}/>
+  <div className="footer">Made by Abhik Bhattacharya on 2020</div>
+  </>
 }
 
 export default MyApp

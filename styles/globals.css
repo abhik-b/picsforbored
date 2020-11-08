@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
 html,
 body {
   padding: 0;
@@ -6,9 +7,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 body{
-  background:#121212;
+  background:url('../public/bg2.png') #121212;
   color: aliceblue;
   overflow: hidden;
+
 }
 a {
   color: inherit;
@@ -19,6 +21,21 @@ a {
   box-sizing: border-box;
 }
 
+.logo{
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  font-size: 25px;
+  font-family: 'Libre Barcode 128 Text', cursive;
+}
+.footer{
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  /* left: 50%; */
+}
 .message{
   position: absolute;
   bottom: 10px;
@@ -67,7 +84,7 @@ justify-content: space-around;
   height: 10%;
   align-items: flex-start;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   z-index: 998;
   background: #121212;
   }
@@ -90,5 +107,12 @@ justify-content: space-around;
     left: 50%;
     top: 120%;
 
+  }
+  .footer{
+    bottom: 0px;
+font-size: 12px;
+left: 0%;
+background: #121212;
+z-index: 998;
   }
 }

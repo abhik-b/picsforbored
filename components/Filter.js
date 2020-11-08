@@ -1,9 +1,8 @@
 import { AnimateSharedLayout } from 'framer-motion'
-import { useState } from 'react'
+import React,{ useState } from 'react'
 import randomIndex from '../shared/randomIndex'
 import {memes,nature,others,art,funny} from '../shared/sources'
 import Button from './Button'
-
 
 
 
@@ -16,28 +15,28 @@ export default function Filter({setSource,setCall}) {
     }
     return (
       <AnimateSharedLayout>
-     <div className="filters">
-       <Button bg="#93f" isSelected={selected===0}
+     <div className="filters" data-testid='filters'>
+       <Button bg="#93f" isSelected={selected===0}  testid='1'
           changeSource={()=>{
           changeSource(memes)
           setSelected(0)
           }}>Memes</Button>
-       <Button bg="#0470db" isSelected={selected===1}
+       <Button bg="#0470db" isSelected={selected===1} testid='2'
           changeSource={()=>{
          changeSource(nature)
          setSelected(1)
          }}>Nature</Button>
-       <Button bg="#eecf22"fg="#000" isSelected={selected===2}
+       <Button bg="#eecf22"fg="#000" isSelected={selected===2} testid='3'
        changeSource={()=>
        {changeSource(art)
         setSelected(2)
        }}>Art</Button>
-       <Button bg="#ee003b" isSelected={selected===3}
+       <Button bg="#ee003b" isSelected={selected===3} testid='4'
        changeSource={()=>{
          changeSource(funny)
          setSelected(3)
          }}>Funny</Button>
-       <Button bg="#00e74d" isSelected={selected===4}
+       <Button bg="#00e74d" isSelected={selected===4} testid='5'
        changeSource={()=>{
          changeSource(others)
          setSelected(4)

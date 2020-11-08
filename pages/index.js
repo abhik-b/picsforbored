@@ -1,6 +1,6 @@
 import { AnimateSharedLayout } from 'framer-motion'
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
+import React,{ useEffect, useState } from 'react'
 import Filter from '../components/Filter'
 import Post from '../components/Post'
 import styles from '../styles/Home.module.css'

@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-const Button=({isSelected,bg,fg="#fff",changeSource,...props})=>{
+const Button=({testid,isSelected,bg,fg="#fff",changeSource,...props})=>{
 return (
 
     <motion.div className='filter' 
+    data-testid={testid}
     style={{background:bg,color:fg}}
     onClick={changeSource}>
     {props.children}
