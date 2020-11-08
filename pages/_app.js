@@ -1,23 +1,15 @@
 import '../styles/globals.css'
 import {useState} from 'react'
+
+export function reportWebVitals(metric) {
+  if (metric.label === 'web-vital') {
+    console.log(metric) // The metric object ({ id, name, startTime, value, label }) is logged to the console
+  }
+}
+
 function MyApp({ Component, pageProps }) {
-  const [history, sethistory] = useState({})
-  const [call, setCall] = useState(false)
-  const [source, setsource] = useState('memes')
-  return <Component {...pageProps}
-  call={call}
-  setCall={(value)=>setCall(value)}
-  history={history}  
-  source={source}  
-  setHistory={newH=>{
-    sethistory(newH)
-    console.log(history)
-  }}
-  setSource={newS=>{
-    setsource(newS)
-    console.log(newS,source)
-    }}
-  />
+  
+  return <Component {...pageProps}/>
 }
 
 export default MyApp

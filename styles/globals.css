@@ -5,7 +5,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+body{
+  background:#121212;
+  color: aliceblue;
+  overflow: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +17,78 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.message{
+  position: absolute;
+  bottom: 10px;
+  background:#e6e6e6;
+  color: rgb(34, 34, 34);
+  border-radius: 12px;
+  padding: 10px;
+  z-index: 1001;
+  font-size: 18px;
+  width: 300px;
+  left: 20px;
+  cursor: crosshair;
+}
+.filters{
+  padding: 10px;
+  height: 80%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.filter{
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  transition: 200ms;
+}
+.filter:hover{
+  transform: scale(1.1);
+}
+.selected{
+  position: absolute;
+  right: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 40%;
+}
+
+@media only screen and (max-width: 850px) {
+  .filters{
+    flex-direction: row;
+  width: 100%;
+  height: 10%;
+  align-items: flex-start;
+  position: fixed;
+  bottom: 0;
+  z-index: 998;
+  background: #121212;
+  }
+  .filter{
+    height: auto;
+  }
+  .filter:hover{
+    transform: none;
+  }
+
+  .message{
+    bottom: 10%;
+    width: 80%;
+    left: 10%;
+  }
+  .selected{
+    width: 5px;
+    height: 5px;
+    right: auto;
+    left: 50%;
+    top: 120%;
+
+  }
 }
