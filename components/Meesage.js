@@ -13,13 +13,18 @@ const Message=()=>{
         exit={{y:400}}
         animate={{y:0,transition:{delay:5}}}
         className="message">
-        <h1>Help</h1>
+        <h1 style={{textAlign:'center'}}>Help</h1>
         <p>Press any topic to get pics of that topic, </p>
         <p>Scroll down or up to get more pics</p>
-        <p> Once you have seen all pics : Press <b>again and again</b> 
-        that same topic to  <b> get more pics of that topic</b>
+        
+        <p> Once you have seen all pics : Press <b>again and again </b> 
+         that same topic to  <b> get more pics of that topic</b>
         </p>
-        <p>Tap on any image to open it in it's <b>full size in new window</b></p>
+        <p>Tap on any image to open it in it's <b>highest quality available</b></p>
+        <p>Tap on anywhere to close a opened image</p>
+        <p>If you have read this message <b>press this message to close it</b></p>
+
+        <p style={{color:"red"}}>Sometimes images might take time to load depending on their source </p>
         </motion.div>
     }
     </>
