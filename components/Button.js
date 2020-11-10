@@ -7,6 +7,7 @@ return (
     <motion.div className='filter' 
     data-testid={testid}
     style={{background:bg,color:fg}}
+    whileTap={{scale:0.8}}
     onClick={changeSource}>
     {props.children}
     {isSelected && 
