@@ -64,7 +64,7 @@ export default function Home(props) {
       title="Kill time with memes and pictures "
       titleTemplate="Pics For Bored | %s"
       description="Are you Bored ? Want some high quality funniest memes ? Mood Off ? Kill time with memes / pictures of nature , art and many more Pics For Bored"
-      canonical="https://www.picsforbored.vercel.app"
+      canonical="https://picsforbored.vercel.app"
       openGraph={{
         type:'website',
         url: 'https://picsforbored.vercel.app',

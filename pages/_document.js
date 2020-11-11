@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
         <Head>
         <html lang='en' />
         <meta name="Keywords" content="Images,Pictures,PicsForBored,Bored,Memes,Art,Funny,Nature,TimeKill,Time Pass,Timepass,RefreshMood" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}></script>
           <script
