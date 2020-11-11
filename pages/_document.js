@@ -9,9 +9,9 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        {/* <link rel="shortcut icon" href="/static/favicon.ico" /> */}
-        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
         <html lang='en' />
+        <meta name="Keywords" content="Images,Pictures,PicsForBored,Bored,Memes,Art,Funny,Nature,TimeKill,Time Pass,Timepass,RefreshMood" />
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}></script>
           <script
           dangerouslySetInnerHTML={{
@@ -19,9 +19,7 @@ export default class MyDocument extends Document {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', '${GA_TRACKING_ID}');
-            
             `
           }}
           >

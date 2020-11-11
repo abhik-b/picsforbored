@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Sofia&display=swap');
 html,
 body {
   padding: 0;
@@ -19,6 +19,14 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.headin{
+  font-family: 'Sofia', cursive;
+  font-size:20px;
+  text-align:center;
+  letter-spacing: 1px;
+  font-weight: lighter;
 }
 
 .logo{
