@@ -1,5 +1,4 @@
 import { NextSeo } from 'next-seo';
-import Head from 'next/head'
 import React,{ useEffect, useState } from 'react'
 import Filter from '../components/Filter'
 import Post from '../components/Post'
@@ -34,6 +33,7 @@ export default function Home(props) {
   const [call, setCall] = useState(false)
   const [source, setsource] = useState('memes')
   const [posts,setPosts]= useState(props.posts)
+  const [err,setErr]= useState(props.err)
   
   useEffect(()=>{
     setCall(false)
@@ -46,7 +46,7 @@ export default function Home(props) {
           const newhist=history
           newhist[source]=body.data.after 
           sethistory(newhist)
-       }).catch(err=>{console.log(err)})
+       }).catch(err=>{setErr(err)})
     }else{
     fetch(`https://www.reddit.com/r/${source}.json`)
     .then(res=>res.json())
@@ -55,14 +55,15 @@ export default function Home(props) {
         const newhist=history
         newhist[source]=body.data.after 
         sethistory(newhist)
-     }).catch(err=>{console.log(err)})
+     }).catch(err=>{setErr(err)})
     }
 },[call])
   return (
     <>
     <NextSeo
-      title="Pics/Memes to kill time , boredom , refresh mood"
-      description="Are you bored ? Want some memes ? Mood Off ? Kill your time with thousands memes/pics of nature,art and many more."
+      title="Kill time , boredom with thousands of memes and pictures "
+      titleTemplate="Pics For Bored | %s"
+      description="Are you bored ? Want some high quality funniest memes ? Mood Off ? Kill your time with thousands memes / pictures of nature , art and many more... good for Time Pass, time kill"
       canonical="https://picsforbored.vercel.app"
       openGraph={{
         type:'website',
@@ -71,13 +72,13 @@ export default function Home(props) {
         description: 'Memes/pics of nature,art and many more to kill your time,cure boredom and refresh mood',
         images: [
           {
-            url: 'https://i.ibb.co/2YcrHTP/og800600.webp',
+            url: 'https://i.ibb.co/XYbRtpQ/og800600.png',
             width: 800,
             height: 600,
             alt: 'Og Image Alt',
           },
           {
-            url: 'https://i.postimg.cc/6pVd4bBt/og900800.png',
+            url: 'https://i.ibb.co/YNMf3fx/og900800.png',
             width: 900,
             height: 800,
             alt: 'Og Image Alt Second',
@@ -93,10 +94,10 @@ export default function Home(props) {
       }}
     />
       <Message/>
-      {props.err && <h1>Something went wrong</h1>}
    <div className={styles.grid}>
      <Filter setCall={setCall} setSource={setsource}/>
-     <div className={styles.container}>
+     <div className={styles.container} >
+      {err && <h1 className="error">Something went wrong Try Later !</h1>}
        <AnimateSharedLayout>
      {posts.map((p,index)=>{
        if(index>1&& p.data.post_hint==='image'){

@@ -7,11 +7,12 @@ return (
     <motion.div className='filter' 
     data-testid={testid}
     style={{background:bg,color:fg}}
-    whileTap={{scale:0.8}}
+    whileTap={{scale:0.7}}
+    whileHover={{scale:1.1}}
     onClick={changeSource}>
     {props.children}
     {isSelected && 
-    <motion.div style={{background:bg}} className='selected' layoutId='selected'></motion.div>
+    <motion.div className='selected' layoutId='selected'></motion.div>
     }
     </motion.div>
     

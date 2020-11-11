@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
         <Head>
         {/* <link rel="shortcut icon" href="/static/favicon.ico" /> */}
         {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <html lang='en' />
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}></script>
           <script
           dangerouslySetInnerHTML={{

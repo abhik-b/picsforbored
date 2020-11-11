@@ -20,7 +20,6 @@ overflow-y: scroll;
 justify-content: space-around;
 align-items: center;
 padding-top: 50px;
-/* background: rebeccapurple; */
 }
 
 @media only screen and (max-width: 850px) {
