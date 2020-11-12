@@ -94,7 +94,7 @@ export default function Home(props) {
       }}
     />
       <Message/>
-      <h1  className="headin">Pics For Bored</h1>
+      <h1  className="headin">📷Pics For Bored📷</h1>
    <div className={styles.grid}>
      <Filter setCall={setCall} setSource={setsource}/>
      <div className={styles.container} >
@@ -107,7 +107,7 @@ export default function Home(props) {
                   key={p.data.name} title={p.data.title} 
                   image={p.data.url_overridden_by_dest}
                   thumbnail={p.data.thumbnail}
-                  created={p.data.created}
+                  height={p.data.thumbnail_height} width={p.data.thumbnail_width}
                 />
        }
      })}

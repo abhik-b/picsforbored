@@ -31,12 +31,12 @@ export default function Filter({setSource,setCall}) {
        {changeSource(art)
         setSelected(2)
        }}>Art</Button>
-       <Button bg="#ee003b" isSelected={selected===3} testid='4'
+       <Button bg="#ff0040" fg="#08012c"  isSelected={selected===3} testid='4'
        changeSource={()=>{
          changeSource(funny)
          setSelected(3)
          }}>Funny</Button>
-       <Button bg="#00e74d" isSelected={selected===4} testid='5'
+       <Button bg="#00e74d" fg="#000" isSelected={selected===4} testid='5'
        changeSource={()=>{
          changeSource(others)
          setSelected(4)

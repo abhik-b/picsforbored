@@ -20,13 +20,27 @@ a {
 * {
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+width: 15px;
+}
+
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(253, 253, 253); 
+  border-radius: 10px;
+}
 
 .headin{
   font-family: 'Sofia', cursive;
-  font-size:20px;
+  font-size:22px;
   text-align:center;
   letter-spacing: 1px;
   font-weight: lighter;
+}
+.description{
+  position: absolute;
+  top: 0;
+  opacity: 0;
 }
 
 .logo{
@@ -161,4 +175,5 @@ text-align: center;
   .help{
     bottom: 0px;
   }
+  
 }

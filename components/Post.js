@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Post.module.css'
 import {  motion } from 'framer-motion';
 
-const Post=({title,image,thumbnail})=>{
+const Post=({title,image,thumbnail,height,width})=>{
         const [open,setOpen]=useState(false)
         
         return (
@@ -13,7 +13,8 @@ const Post=({title,image,thumbnail})=>{
                         ?
                         <Image  src={thumbnail}
                                 alt={title}
-                                layout='fill'></Image>
+                                height={height} width={width}
+                                ></Image>
                         :
                         <b>Click here to open this image</b>
                 }   

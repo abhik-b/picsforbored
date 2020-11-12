@@ -8,9 +8,13 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-        <html lang='en' />
-        <meta name="Keywords" content="Images,Pictures,PicsForBored,Bored,Memes,Art,Funny,Nature,TimeKill,Time Pass,Timepass,RefreshMood" />
+      <html lang='en'>
+        <title>Pics For Bored </title>
+        </html> 
+       <Head>
+        
+        <meta name="title" content="Pics For Bored | Kill time with memes and random pictures"/>
+        <meta name="keywords" content="Images,Pictures,PicsForBored,Bored,Memes,Art,Funny,Nature,TimeKill,Time Pass,Timepass,RefreshMood" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}></script>
