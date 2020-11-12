@@ -175,5 +175,7 @@ text-align: center;
   .help{
     bottom: 0px;
   }
-  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 }

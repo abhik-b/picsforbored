@@ -63,7 +63,7 @@ export default function Home(props) {
     <NextSeo
       title="Kill time with memes and pictures "
       titleTemplate="Pics For Bored | %s"
-      description="Are you Bored ? Want some high quality funniest memes ? Mood Off ? Kill time with memes / pictures of nature , art and many more Pics For Bored"
+      description="Kill time with memes / pictures of nature , art and many more Pics For Bored,bored images, bored photos , pictures for bored,images for bored, time kill,pics for bored"
       canonical="https://picsforbored.vercel.app"
       openGraph={{
         type:'website',
@@ -94,7 +94,7 @@ export default function Home(props) {
       }}
     />
       <Message/>
-      <h1  className="headin">📷Pics For Bored📷</h1>
+      <h1  className="headin">Pics For Bored</h1>
    <div className={styles.grid}>
      <Filter setCall={setCall} setSource={setsource}/>
      <div className={styles.container} >
