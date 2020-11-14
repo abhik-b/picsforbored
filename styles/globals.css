@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Sofia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Sofia&display=swap");
 html,
 body {
   padding: 0;
@@ -6,11 +6,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-body{
-  background:url('../public/bg1.webp') #121212;
+body {
+  background: url("../public/bg1.webp") #121212;
   color: aliceblue;
   overflow: hidden;
-
 }
 a {
   color: inherit;
@@ -20,56 +19,59 @@ a {
 * {
   box-sizing: border-box;
 }
-::-webkit-scrollbar{
-width: 15px;
+::-webkit-scrollbar {
+  width: 15px;
 }
 
- 
 ::-webkit-scrollbar-thumb {
-  background: rgb(253, 253, 253); 
+  background: rgb(253, 253, 253);
   border-radius: 10px;
 }
 
-.headin{
-  font-family: 'Sofia', cursive;
-  font-size:22px;
-  text-align:center;
+.headin {
+  font-family: "Sofia", cursive;
+  font-size: 22px;
+  text-align: center;
   letter-spacing: 1px;
   font-weight: lighter;
 }
-.description{
+.description {
   position: absolute;
   top: 0;
   opacity: 0;
+  z-index: -2;
 }
 
-.logo{
+.logo {
   position: fixed;
   top: 25px;
   right: 25px;
   font-size: 25px;
-  font-family: 'Libre Barcode 128 Text', cursive;
+  font-family: "Libre Barcode 128 Text", cursive;
   z-index: 1999;
 }
-.footer,.footer2{
+.footer {
   position: fixed;
-  bottom: 5px;
-  width: 30%;
-  right:0px;
+  top: 15px;
+  padding: 5px;
+  left: 25px;
   text-align: center;
-  z-index: -1;
+  z-index: 998;
+  border-radius: 8px;
+  color: #121212;
+  background: #00ffbf;
 }
-.footer2{
-  top:10px;
+.footer2 {
+  top: 10px;
   text-align: left;
   font-size: 18px;
   left: 0px;
   right: auto;
 }
-.message{
+.message {
   position: absolute;
   bottom: 40px;
-  background:#ffffff;
+  background: #ffffff;
   color: rgb(34, 34, 34);
   border: 1px solid rgb(0, 0, 0);
   border-radius: 12px;
@@ -80,14 +82,14 @@ width: 15px;
   left: 20px;
   cursor: crosshair;
 }
-.filters{
+.filters {
   padding: 10px;
   height: 80%;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.filter{
+.filter {
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
@@ -96,10 +98,10 @@ justify-content: space-around;
   position: relative;
   transition: 200ms;
 }
-.filter:hover{
+.filter:hover {
   transform: scale(1.1);
 }
-.selected{
+.selected {
   position: absolute;
   right: -20px;
   width: 10px;
@@ -108,71 +110,75 @@ justify-content: space-around;
   top: 40%;
   background: white;
 }
-.help{
+.help {
   z-index: 999;
-  width: 20px;
+  width: 50px;
   height: 20px;
-  font-weight: bold;
   position: fixed;
   left: 20px;
   bottom: 5px;
   cursor: pointer;
   background: #ffffff;
   color: #121212;
-  /* padding-bottom: 10px; */
-  border-radius: 50%;
-  display: grid;place-items: center;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
 }
-.error{
+.error {
   background: rgb(255, 37, 37);
   color: #ffffff;
   padding: 5px;
 }
 @media only screen and (max-width: 850px) {
-  .filters{
-    flex-direction: row;
-  width: 100%;
-  height: 15%;
-  align-items: center;
-  position: fixed;
-  bottom: 0px;
-  z-index: 998;
-  background: #121212;
+  .logo {
+    font-size: 12px;
+    right: 5px;
   }
-  .filter{
+  .filters {
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    z-index: 998;
+    background: #121212;
+  }
+  .filter {
     height: auto;
   }
-  .filter:hover{
+  .filter:hover {
     transform: none;
   }
 
-  .message{
+  .message {
     bottom: 10%;
     width: 80%;
     left: 10%;
   }
-  .selected{
+  .selected {
     width: 5px;
     height: 5px;
     right: auto;
     left: 50%;
     top: -40%;
-
   }
-  .footer{
+  .footer {
     bottom: 0px;
-font-size: 12px;
-right: 0%;
-width:70%;
-background: #121212;
-z-index: 998;
-text-align: center;
+    font-size: 17px;
+    right: 0%;
+    width: 70%;
+    top: auto;
+    left: auto;
+    z-index: 9998;
+    text-align: center;
   }
-  .footer2{
+  .footer2 {
     text-align: left;
-    top:0px
+    top: 0px;
   }
-  .help{
+  .help {
     bottom: 0px;
   }
   ::-webkit-scrollbar {

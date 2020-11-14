@@ -1,52 +1,52 @@
-.post{
-    width: auto;
-    height: auto;
-    margin:2%;
-    display: grid;
-    place-items: center;
-    position: relative;
-    transition: 200ms;
+.post {
+  margin: 2%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: 200ms;
 }
-.post:hover{
-    transform: scale(1.1);
-    cursor: zoom-in;
+.post:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
 }
-.image{
-    max-width:30%;
-    max-height: 90%;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
-    z-index: 1000;
+.image {
+  max-width: 30%;
+  max-height: 90%;
+  background: red;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
 }
 
-
-.modal{
-    cursor: zoom-out;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    z-index: 999;
-    display: flex;flex-direction: column;justify-content: center;align-items: center;
+.modal {
+  cursor: zoom-out;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @supports (backdrop-filter: none) {
-	.modal {
-		backdrop-filter: blur(4px);
-	}
+  .modal {
+    backdrop-filter: blur(4px);
+  }
 }
 
 @supports not (backdrop-filter: none) {
   .modal {
-    background: url('../public/bg1.webp') #121212; 
+    background: url("../public/bg1.webp") #121212;
   }
 }
 @media only screen and (max-width: 850px) {
-    .post:hover{
-        transform:none;
-        z-index: 0;
-    }
-    .image{
-        max-width:100%;
-    }
-    
+  .post:hover {
+    transform: none;
+    z-index: 0;
   }
+  .image {
+    max-width: 100%;
+  }
+}
