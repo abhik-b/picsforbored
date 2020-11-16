@@ -67,7 +67,7 @@ export default function Random(props) {
       <NextSeo
         title="Kill time with memes and pictures "
         titleTemplate="Pics For Bored | %s"
-        description="Kill time with memes / pictures of nature , art and many more Pics For Bored,bored images, bored photos , pictures for bored,images for bored, time kill,pics for bored"
+        description="Kill time with memes / pictures of nature , art and many more Pics For Bored , bored images, bored photos , pictures for bored , images for bored, time kill pics "
         canonical="https://picsforbored.vercel.app"
         openGraph={{
           type: "website",
@@ -103,7 +103,7 @@ export default function Random(props) {
       <h1 className="headin"> Pics For Bored</h1>
 
       <Link href="/category">
-        <a className="footer">Change view</a>
+        <a className="footer">Change view style</a>
       </Link>
 
       <h2 className="description">
@@ -122,6 +122,22 @@ export default function Random(props) {
         meeting waiting lonely excited sleep bored at work working Confused
         boredom Random Pics and Memes
       </h2>
+      <p className="description">
+        Bored Memes - Funny Boring Meme and Pictures , boredom stock images,
+        bored images, bored pictures , pictures for bored,images for bored, time
+        kill,pics for bored, Pics For Bored,Pics For Bored | Kill time with
+        memes and random pictures, images, what to do when bored,when you are
+        stuck inside and bored,fun websites, fun, images fun, fun images, Bored
+        Memes. Best Collection of Funny Bored Pictures, Random pictures, random
+        memes, dank memes, funniest memes, random pics, memes , time pass , time
+        kill , Bored funniest memes Mood Off Kill time with memes & random
+        pictures of nature , art and many more Pics For Bored | Kill time with
+        memes and random pictures , kill your time,cure boredom and refresh mood
+        bored Photos. boring tired stress sad yawn work angry happy frustrated
+        thinking quarantine lazy sleepy alone stressed sleeping office time
+        meeting waiting lonely excited sleep bored at work working Confused
+        boredom Random Pics and Memes
+      </p>
       <div className={styles.container}>
         {err && <h1 className="error">Something went wrong Try Later !</h1>}
         {posts.map((p, index) => {

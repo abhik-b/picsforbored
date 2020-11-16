@@ -1,30 +1,32 @@
+## What's this??
+
+This is a website filled with memes and pictures of nature , art and many more to keep anyone **entertained for hours**..!
+
+## Target Audience
+
+This website is intended for people who are bored , want something to time kill, for people who wants some good memes etc.
+
+## How to use ?
+
+1. Go to the website at https://picsforbored.vercel.app/
+2. Tap on any picture to open it in it's highest quality available
+3. Scroll to see more...
+4. In default view you should see "load more" button , tap it to see more pictures
+   `OR`
+5. In category view you can tap on any category to see more pictures of that category
+6. "change view style" button changes the view style
+
+## What's this site using ?
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is deployed on Vercel.
 
-## Getting Started
+## Where's this site ?
 
-First, run the development server:
+https://picsforbored.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Pics For Bored](https://i.ibb.co/XYbRtpQ/og800600.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Score of this Site
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+_I'll Update that later_

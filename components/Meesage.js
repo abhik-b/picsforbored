@@ -25,7 +25,8 @@ const Message = (props) => {
             <p>Tap on anywhere to close a opened image</p>
             <p>
               <b>
-                If you change mode please read the help section of that mode
+                If you change view style please read the help section of that
+                view style
               </b>
             </p>
             <p>Tap here to close this message</p>
